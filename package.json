@@ -1,0 +1,17 @@
+{
+  "name": "testbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./build/index.js",
+  "scripts": {
+    "compile": "coffee -c -o build src",
+    "rebuild": "rm -r build && npm run compile && clear && node .",
+    "build": "npm run compile && clear && node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@kyudiscord/neo": "^1.0.11"
+  }
+}
